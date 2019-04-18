@@ -4,7 +4,7 @@ import PausePlayButton from "./PausePlayButton";
 import ResetButton from "./ResetButton";
 import "../styles/timer.css";
 
-const WORK_TIME = ;
+const WORK_TIME = 80;
 const BREAK_TIME = 2;
 
 const MODES_TIMES = {
@@ -65,7 +65,7 @@ class Timer extends React.Component {
   tick() {
     const { mode, isPlaying, time } = this.state;
 
-    if (isPlaying) {x
+    if (isPlaying) {
       this.setState(
         prevState => ({
           time: prevState.time - 1
